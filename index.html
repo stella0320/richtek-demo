@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP IBP R&amp;S 流程介紹</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 頂部導覽列 -->
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <span class="brand__logo">SAP IBP</span>
+        </div>
+        <nav class="mainnav">
+          <a href="compare.html" class="mainnav__link">綜合分析</a>
+          <a href="snop.html" class="mainnav__link">S&amp;OP</a>
+          <a href="index.html" class="mainnav__link mainnav__link--active">R&amp;S</a>
+          <a href="pa.html" class="mainnav__link">Planning Area</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Response &amp; Supply Planning · Order-based Planning</p>
+        <h1 class="hero__title">R&amp;S</h1>
+        <p class="hero__lead">
+          從需求輸入到 ERP 執行，SAP IBP R&amp;S / OBP
+          以八個步驟把「未來要多少」轉化為「實際怎麼做、怎麼交」。
+        </p>
+        <p class="hero__oneliner" id="heroOneLiner"></p>
+        <div class="hero__actions">
+          <a href="#flow" class="btn btn--primary">看流程總覽</a>
+          <a href="#scenario" class="btn btn--ghost">看情境演示</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- 流程總覽 -->
+      <section id="flow" class="section">
+        <div class="section__head">
+          <h2 class="section__title">流程總覽</h2>
+          <p class="section__desc">
+            點選任一步驟，展開詳細說明、輸入／輸出與 demo 資料。
+          </p>
+        </div>
+        <div class="flow">
+          <ol class="timeline" id="timeline"></ol>
+          <div class="detail" id="detail">
+            <p class="detail__placeholder">← 請點選左側任一步驟查看詳情</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 情境演示 -->
+      <section id="scenario" class="section">
+        <div class="section__head">
+          <h2 class="section__title">情境演示</h2>
+          <p class="section__desc">
+            以 PMIC_A（未來 4 週需求 100,000 顆）貫穿全流程，切換情境觀察差異。
+          </p>
+        </div>
+        <div class="scenario__tabs" id="scenarioTabs"></div>
+        <p class="scenario__intro" id="scenarioIntro"></p>
+        <div class="scenario__body">
+          <ol class="walk" id="scenarioWalk"></ol>
+          <div class="scenario__table" id="scenarioTable"></div>
+        </div>
+      </section>
+
+      <!-- 快速記憶版 -->
+      <section id="memo" class="section" hidden>
+        <div class="section__head">
+          <h2 class="section__title">快速記憶版</h2>
+          <p class="section__desc">一句話記住每個步驟在做什麼。</p>
+        </div>
+        <table class="memo-table" id="memoTable"></table>
+        <p class="memo-oneliner" id="memoOneLiner"></p>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

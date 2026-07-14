@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP IBP 綜合分析</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 頂部導覽列 -->
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <span class="brand__logo">SAP IBP</span>
+        </div>
+        <nav class="mainnav">
+          <a href="compare.html" class="mainnav__link mainnav__link--active">綜合分析</a>
+          <a href="snop.html" class="mainnav__link">S&amp;OP</a>
+          <a href="index.html" class="mainnav__link">R&amp;S</a>
+          <a href="pa.html" class="mainnav__link">Planning Area</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">S&amp;OP vs. R&amp;S</p>
+        <h1 class="hero__title">綜合分析</h1>
+        <p class="hero__lead">
+          策略性中長期規劃 (S&amp;OP) vs. 短期快速反應與執行 (R&amp;S)
+        </p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">供應鏈為什麼需要規劃？</h2>
+          <p class="section__desc">
+            供應鏈計畫會受到需求、供應、產能、庫存與資料品質影響，S&amp;OP 與 R&amp;S 分別負責中長期平衡與短期回應。
+          </p>
+        </div>
+        <div class="factor-grid">
+          <article class="factor-card">
+            <span class="factor-card__tag">Demand</span>
+            <h3>需求波動</h3>
+            <p>Forecast 改變、客戶急單、拉貨節奏變動，會影響需求共識，也會觸發短期重排。</p>
+          </article>
+          <article class="factor-card">
+            <span class="factor-card__tag">Supply</span>
+            <h3>供應不確定性</h3>
+            <p>Foundry 延遲、供應商交期變動、Lead Frame 缺料，都會讓原本的供應計畫失準。</p>
+          </article>
+          <article class="factor-card">
+            <span class="factor-card__tag">Capacity</span>
+            <h3>產能限制</h3>
+            <p>OSAT、Foundry、測試機台常是共用資源，急單可能會擠壓其他產品的可用產能。</p>
+          </article>
+          <article class="factor-card">
+            <span class="factor-card__tag">Inventory</span>
+            <h3>庫存與服務水準</h3>
+            <p>庫存太低會缺貨，庫存太高會壓資金；計畫需要在服務水準與庫存週轉間取捨。</p>
+          </article>
+          <article class="factor-card">
+            <span class="factor-card__tag">Lead Time</span>
+            <h3>長交期與多階製程</h3>
+            <p>Wafer → Die → Assembly → Test → 成品，每一階延遲或良率下降都會影響交期。</p>
+          </article>
+          <article class="factor-card">
+            <span class="factor-card__tag">Data</span>
+            <h3>資料品質與共識</h3>
+            <p>Master data、訂單、成本與財務目標若不一致，計畫結果會失真，也難以跨部門決策。</p>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">供應鏈為什麼需要 S&amp;OP 與 R&amp;S？</h2>
+        </div>
+        <img
+          class="cmp-image"
+          src="compare%20table.png"
+          alt="SAP IBP S&amp;OP vs. Response & Supply (R&S) 差異比較"
+        />
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">從 S&amp;OP 到 R&amp;S：SAP IBP 的完整規劃流程</h2>
+        </div>
+        <img
+          class="cmp-image"
+          src="end-to-end%20process.png"
+          alt="End-to-End Planning Process"
+        />
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP IBP S&amp;OP 流程介紹</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 頂部導覽列 -->
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <span class="brand__logo">SAP IBP</span>
+        </div>
+        <nav class="mainnav">
+          <a href="compare.html" class="mainnav__link">綜合分析</a>
+          <a href="snop.html" class="mainnav__link mainnav__link--active">S&amp;OP</a>
+          <a href="index.html" class="mainnav__link">R&amp;S</a>
+          <a href="pa.html" class="mainnav__link">Planning Area</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Sales &amp; Operations Planning · Time-Series-Based Planning</p>
+        <h1 class="hero__title">S&amp;OP</h1>
+        <p class="hero__lead">
+          從資料準備到管理層決策，SAP IBP S&amp;OP
+          以八個步驟把「未來可能賣多少」逐步收斂成「公司最終要採用的供需方案」。
+        </p>
+        <p class="hero__oneliner" id="heroOneLiner"></p>
+        <div class="hero__actions">
+          <a href="#flow" class="btn btn--primary">看流程總覽</a>
+          <a href="#example" class="btn btn--ghost">看半導體例子</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- 流程總覽 -->
+      <section id="flow" class="section">
+        <div class="section__head">
+          <h2 class="section__title">流程總覽</h2>
+          <p class="section__desc">
+            點選任一步驟，展開詳細說明、輸入／輸出與 demo 資料。
+          </p>
+        </div>
+        <div class="flow">
+          <ol class="timeline" id="timeline"></ol>
+          <div class="detail" id="detail">
+            <p class="detail__placeholder">← 請點選左側任一步驟查看詳情</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 半導體貫穿例子 -->
+      <section id="example" class="section">
+        <div class="section__head">
+          <h2 class="section__title">半導體貫穿例子</h2>
+          <p class="section__desc">
+            以 PMIC_A 逐步走完 S&amp;OP，觀察需求數字如何被修正與受限。
+          </p>
+        </div>
+        <p class="scenario__intro" id="exampleIntro"></p>
+        <div class="example-tabs" id="exampleStepTabs"></div>
+        <div class="example-detail" id="exampleStepDetail"></div>
+        <ol class="walk" id="exampleWalk" hidden></ol>
+      </section>
+
+      <!-- 快速記憶版 -->
+      <section id="memo" class="section" hidden>
+        <div class="section__head">
+          <h2 class="section__title">快速記憶版</h2>
+          <p class="section__desc">一句話記住每個步驟在做什麼。</p>
+        </div>
+        <table class="memo-table" id="memoTable"></table>
+        <p class="memo-oneliner" id="memoOneLiner"></p>
+      </section>
+    </main>
+
+    <script src="snop-data.js"></script>
+    <script src="snop-app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP IBP Planning Area 架構介紹</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 頂部導覽列 -->
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <span class="brand__logo">SAP IBP</span>
+        </div>
+        <nav class="mainnav">
+          <a href="compare.html" class="mainnav__link">綜合分析</a>
+          <a href="snop.html" class="mainnav__link">S&amp;OP</a>
+          <a href="index.html" class="mainnav__link">R&amp;S</a>
+          <a href="pa.html" class="mainnav__link mainnav__link--active">Planning Area</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">SAP IBP Architecture</p>
+        <h1 class="hero__title">Planning Area 架構介紹</h1>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- 組成元件 -->
+      <section id="components" class="section">
+        <div class="section__head">
+          <h2 class="section__title">組成元件</h2>
+          <p class="section__desc">
+            點選任一元件，展開說明與 demo 資料。
+          </p>
+        </div>
+        <div class="flow">
+          <ol class="timeline" id="timeline"></ol>
+          <div class="detail" id="detail">
+            <p class="detail__placeholder">← 請點選左側任一元件查看詳情</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="pa-data.js"></script>
+    <script src="pa-app.js"></script>
+  </body>
+</html>
